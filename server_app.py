@@ -25,7 +25,7 @@ async def health():
     Health Check service
     """
 
-    return {"message":"all good"}
+    return {"message":"all good on my side!"}
 
 # Inference service
 @app.post("/inference")

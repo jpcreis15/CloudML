@@ -5,9 +5,9 @@ setup: requirements.txt
 clean:
 	rm -rf __pycache__
 build:
-	docker build --rm --tag cloudml .
+	docker build --rm --tag cloudml_image .
 deploy:
-	docker run -d -p 8000:8000 --name cloudml-container cloudml
+	docker run -d -p 8000:8000 --name cloudml-container cloudml_image
 remove:
 	docker rm cloudml-container
 start:
